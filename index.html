@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Briefed Web AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+  <div class="max-w-xl mx-auto py-12 px-4">
+    <h1 class="text-3xl font-bold text-center mb-6">Briefed Web (AI)</h1>
+    <input type="file" id="fileInput" accept=".txt,.csv" class="mb-4 w-full p-2 border rounded" />
+    <label for="voiceSelect" class="block mt-4 mb-2">Choose Voice:</label>
+    <select id="voiceSelect" class="w-full p-2 border rounded mb-6"></select>
+    <button onclick="generateBriefing()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">Generate & Read Briefing</button>
+    <div id="output" class="mt-6 whitespace-pre-line bg-white p-4 rounded shadow"></div>
+  </div>
+  <script src="briefed.js"></script>
+</body>
+</html>
